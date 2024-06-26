@@ -100,5 +100,9 @@ public class Service02Stack extends Stack {
                 .scaleOutCooldown(Duration.seconds(60))
                 .build());
 
+
+        //atribuindo permissão a tarefa a consumir as mensagens
+        productEventsQueue.grantConsumeMessages(service02.getTaskDefinition().getTaskRole());
+
     }
 }
