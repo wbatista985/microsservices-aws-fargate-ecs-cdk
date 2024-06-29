@@ -37,7 +37,9 @@ public class DdbStack extends Stack {
                 .removalPolicy(RemovalPolicy.DESTROY)
                 .build();
 
+    }
 
-
+    public Table getProductEventsDbd() {
+        return productEventsDbd;
     }
 }
